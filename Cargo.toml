@@ -1,0 +1,15 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+edition = "2021"
+license = "MPL-v2"
+
+[features]
+
+[dependencies]
+color-eyre = "0.5.11"
+fancy-regex = "0.7.1"
+itertools = "0.10.1"
+lazy_static = "1.4.0"
+md5 = "0.7.0"
+paste = "1.0.6"
