@@ -2,10 +2,10 @@ use std::collections::HashMap;
 
 type Name<'a> = &'a str;
 
-struct Var<'a> {
-    name: Name<'a>,
-    val: u16,
-}
+// struct Var<'a> {
+//     name: Name<'a>,
+//     val: u16,
+// }
 
 enum Instr<'a> {
     And(Name<'a>, Name<'a>),

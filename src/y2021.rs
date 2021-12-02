@@ -1,3 +1,3 @@
 use adventofcode::mods;
 
-mods!(1);
+mods!(1, 2);
