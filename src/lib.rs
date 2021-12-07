@@ -19,7 +19,7 @@ macro_rules! run {
         paste::paste! {
             println!(
                 "Answer: {:#?}",
-                crate::[<y $year>]::[<day $day>]::solve(&input)?
+                crate::[<y $year>]::[<day $day>]::solve(&input)
             );
         }
     };
