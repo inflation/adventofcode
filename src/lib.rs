@@ -1,3 +1,6 @@
+pub mod y2015;
+pub mod y2021;
+
 #[macro_export]
 macro_rules! mods {
 	($($module:literal$(,)?)*) => {
@@ -19,7 +22,7 @@ macro_rules! run {
         paste::paste! {
             println!(
                 "Answer: {:#?}",
-                crate::[<y $year>]::[<day $day>]::solve(&input)
+                $crate::[<y $year>]::[<day $day>]::solve(&input)
             );
         }
     };

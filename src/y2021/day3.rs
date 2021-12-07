@@ -2,7 +2,7 @@ use itertools::Itertools;
 
 const BITS: usize = 12;
 
-pub fn solve(input: &str) -> color_eyre::Result<u32> {
+pub fn solve(input: &str) -> u32 {
     let nums = input
         .lines()
         .map(|l| u32::from_str_radix(l, 2).unwrap())
@@ -28,5 +28,5 @@ pub fn solve(input: &str) -> color_eyre::Result<u32> {
         .last()
         .unwrap();
 
-    Ok(o2 * co2)
+    o2 * co2
 }

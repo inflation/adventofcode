@@ -1,6 +1,6 @@
 use itertools::Itertools;
 
-pub fn solve(input: &str) -> color_eyre::Result<i32> {
+pub fn solve(input: &str) -> i32 {
     let mut depth = 0;
     let mut distance = 0;
     let mut aim = 0;
@@ -21,5 +21,5 @@ pub fn solve(input: &str) -> color_eyre::Result<i32> {
             }
         });
 
-    Ok(depth * distance)
+    depth * distance
 }
