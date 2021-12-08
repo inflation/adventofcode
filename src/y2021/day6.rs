@@ -1,7 +1,7 @@
 const DAYS: usize = 256;
 
 #[must_use]
-pub fn solve(input: &str) -> usize {
+pub fn solve(input: &str) -> u64 {
     let mut map = input
         .split(',')
         .map(|s| s.parse().unwrap())

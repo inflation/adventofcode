@@ -9,7 +9,7 @@ use color_eyre::Result;
 fn main() -> Result<()> {
     color_eyre::install()?;
 
-    run!(2021, 6);
+    run!(2021, 8);
 
     Ok(())
 }
