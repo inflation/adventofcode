@@ -13,15 +13,7 @@ macro_rules! run {
 }
 
 pub fn criterion_benchmark(c: &mut Criterion) {
-    // run!(c, 2021, 1);
-    // run!(c, 2021, 2);
-    // run!(c, 2021, 3);
-    // run!(c, 2021, 4);
-    // run!(c, 2021, 5);
-    // run!(c, 2021, 6);
-    // run!(c, 2021, 7);
-    // run!(c, 2021, 8);
-    run!(c, 2021, 9);
+    run!(c, 2021, 10);
 }
 
 criterion_group!(benches, criterion_benchmark);
