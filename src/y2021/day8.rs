@@ -46,7 +46,7 @@ pub fn solve(input: &str) -> usize {
             }
 
             output.split_ascii_whitespace().fold(0, |acc, s| {
-                let signal: BTreeSet<_> = s.bytes().collect();
+                let signal = s.bytes().collect();
                 let digit = digits.iter().position(|d| *d == signal).unwrap();
 
                 acc * 10 + digit
