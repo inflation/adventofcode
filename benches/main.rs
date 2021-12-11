@@ -13,7 +13,7 @@ macro_rules! run {
 }
 
 pub fn criterion_benchmark(c: &mut Criterion) {
-    run!(c, 2021, 10);
+    run!(c, 2021, 11);
 }
 
 criterion_group!(benches, criterion_benchmark);
